@@ -1,0 +1,114 @@
+/* frontend/my-app/src/App.css */
+
+/* Reset default margins and padding */
+html, body {
+  margin: 0;
+  padding: 0;
+  height: 100%; /* Ensure full height */
+}
+
+/* Rest of your CSS */
+.dark-mode {
+  background-color: #121212;
+  color: #e0e0e0;
+  height: 100%; /* Ensure the dark mode fills the full height */
+}
+
+.dark-mode h1 {
+  color: #bb86fc;
+}
+
+.chat-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  height: calc(100% - 100px); /* Adjust height to fill remaining space, adjust 100px as needed*/
+}
+
+.chat-log {
+  padding: 20px;
+  background-color: #1e1e1e;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  overflow-y: auto;
+}
+
+.fixed-chat-area {
+  height: 400px; /* Fixed height for chat area */
+}
+
+.message-container {
+  margin-bottom: 10px;
+}
+
+.user-message {
+  background-color: #292929; /* Darker background for user */
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.gpt-response {
+  background-color: #363636; /* Slightly lighter background for GPT */
+  padding: 8px;
+  border-radius: 5px;
+  margin-bottom: 5px;
+  text-align: left;
+}
+
+.input-area {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+}
+
+.input-field {
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  border: 1px solid #555;
+  background-color: #222;
+  color: #e0e0e0;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+button {
+  padding: 10px;
+  background-color: #bb86fc;
+  color: #121212;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  margin-right: 10px;
+}
+
+button:hover {
+  background-color: #9c68e0;
+}
+
+.button-container {
+  display: flex;
+  justify-content: center;
+}
+
+.loading-message {
+  text-align: center;
+  font-style: italic;
+  color: #888;
+}
+
+.error-message {
+  text-align: center;
+  color: #ff6e6e;
+  margin-top: 10px;
+}
+
+.timestamp {
+  font-size: 0.7em;
+  color: #9e9e9e;
+  float: right;
+}
